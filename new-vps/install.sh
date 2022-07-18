@@ -13,9 +13,9 @@ echo
 echo -e "${yellow}--- Updating system${endColor}"
 
 sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install ca-certificates curl gnupg lsb-release! -y
-sudo apt-get install jq -y
+sudo apt-get -y upgrade
+sudo apt-get -y install ca-certificates curl gnupg lsb-release!
+sudo apt-get -y install jq
 chmod +x ./libs/*
 cd ~ || exit
 
