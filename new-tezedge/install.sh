@@ -27,3 +27,5 @@ sudo chmod 777 ${TEZOS_PATH}/tezedge
 echo
 echo -e "${yellow}--- Running Docker Tezos container${endColor}"
 echo
+
+sudo docker-compose up -d
