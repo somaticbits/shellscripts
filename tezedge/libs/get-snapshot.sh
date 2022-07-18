@@ -7,9 +7,10 @@ echo
 echo -e "${yellow}--- Pulling latest snapshot${endColor}"
 echo
 
-if [ ! -e "${TEZOS_PATH}"/snapshots/mainnet.full ]; then
+SNAPSHOT=$(curl -s http://snapshots.tezedge.com:8880/mainnet/irmin/full/ | jq  '.[2].name' | xargs)
+
+if [ ! -e "${TEZOS_PATH}"/tezedge/"${SNAPSHOT}" ]; then
   # Download latest Tezedge snapshot
-  SNAPSHOT=$(curl -s http://snapshots.tezedge.com:8880/mainnet/irmin/full/ | jq  '.[2].name' | xargs)
   sudo curl -l "${TEZEDGE_SNAPSHOTS_URL}""${SNAPSHOT}" -o "${TEZOS_PATH}"/tezedge/"${SNAPSHOT}"
 else
   echo
