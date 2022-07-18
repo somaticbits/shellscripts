@@ -22,7 +22,6 @@ echo
 sudo mkdir -p ${TEZOS_PATH}/tezedge
 sudo chmod 777 ${TEZOS_PATH}/tezedge
 
-./libs/get-snapshot.sh
 ./libs/install-snapshot.sh
 
 echo
