@@ -11,7 +11,7 @@ echo -e "${yellow}--- Pulling Tezedge Docker image${endColor}"
 echo
 
 chmod +x ./libs/*
-sudo docker pull tezedge/tezedge:latest-release
+sudo docker pull ${TEZEDGE_IMAGE}
 
 echo
 echo -e "${yellow}--- Creating folders for permanent storage${endColor}"
