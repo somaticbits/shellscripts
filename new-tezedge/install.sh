@@ -22,7 +22,7 @@ echo
 sudo mkdir -p ${TEZOS_PATH}/tezedge
 sudo chmod 777 ${TEZOS_PATH}/tezedge
 
-./libs/install-snapshot.sh
+./libs/get-snapshot.sh
 
 echo
 echo -e "${yellow}--- Running Docker Tezos container${endColor}"

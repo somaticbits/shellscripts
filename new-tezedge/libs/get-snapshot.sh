@@ -11,7 +11,7 @@ if [ ! -e "${TEZOS_PATH}"/snapshots/mainnet.full ]; then
   sudo mkdir -p "${TEZOS_PATH}"/snapshots
   # Download latest Tezedge snapshot
   SNAPSHOT_URL=$(curl -s http://snapshots.tezedge.com:8880/mainnet/irmin/full/ | jq  '.[2].name' | xargs)
-  sudo curl -l "${SNAPSHOTS_TEZEDGE_URL}""${SNAPSHOT_URL}" -o "${TEZOS_PATH}"/snapshots/mainnet.full
+  sudo curl -l "${SNAPSHOTS_TEZEDGE_URL}""${SNAPSHOT_URL}" -o "${TEZOS_PATH}"/tezedge/mainnet.full
 else
   echo
   echo -e "${green}✓ Snapshot already pulled!${endColor}"
