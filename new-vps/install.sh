@@ -1,8 +1,6 @@
 #!/bin/bash
 
 source ./libs/colors.sh
-source ./libs/get-neovim.sh
-source ./libs/get-docker.sh
 
 echo
 echo -e "${yellow}*******************************************************${endColor}"
@@ -19,7 +17,9 @@ sudo apt-get -y install jq
 chmod +x ./libs/*
 cd ~ || exit
 
+# get and install docker
 ./libs/get-docker.sh
 
+# get and install neovim
 ./libs/get-neovim.sh
 
