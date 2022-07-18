@@ -18,3 +18,7 @@ chmod +x ./libs/*
 
 # get and install docker
 ./libs/get-docker.sh
+
+# get and install neovim
+./libs/get-neovim.sh
+

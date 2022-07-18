@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./libs/colors.sh
+
 echo -e "${yellow}--- Installing Docker${endColor}"
 
 sudo mkdir -p /etc/apt/keyrings

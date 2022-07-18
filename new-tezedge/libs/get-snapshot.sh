@@ -1,3 +1,7 @@
+#!/bin/bash
+
+source ./libs/colors.sh
+
 echo
 echo -e "${yellow}--- Pulling latest snapshot${endColor}"
 echo
