@@ -18,8 +18,8 @@ echo -e "${yellow}--- Creating folders for permanent storage${endColor}"
 echo
 
 # Creating folders for permanent storage of Docker volumes
-mkdir -p ${TEZOS_PATH}/node
-chmod 777 ${TEZOS_PATH}/node
+sudo mkdir -p ${TEZOS_PATH}/tezedge
+sudo chmod 777 ${TEZOS_PATH}/tezedge
 
 ./libs/get-snapshot.sh
 ./libs/install-snapshot.sh
