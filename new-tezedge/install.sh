@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source ./libs/colors.sh
+source ./libs/config.sh
 
 echo
 echo -e "${yellow}********************************************************${endColor}"
