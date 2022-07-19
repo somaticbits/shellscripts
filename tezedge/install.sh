@@ -28,4 +28,4 @@ echo
 echo -e "${yellow}--- Running Docker Tezos container${endColor}"
 echo
 
-sudo docker-compose up -d
+#sudo docker-compose up -d
