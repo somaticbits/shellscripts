@@ -33,6 +33,6 @@ services:
     volumes:
       - "/var/tezos/tezedge:/tmp/tezedge"
 
-volumes:
-  tezedge-with-irmin-storage-data:
-    external: true
+#volumes:
+#  tezedge-with-irmin-storage-data:
+#    external: true
