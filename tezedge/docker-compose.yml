@@ -35,4 +35,4 @@ services:
 
 volumes:
   tezedge-with-irmin-storage-data:
-    external: false
+    external: true
