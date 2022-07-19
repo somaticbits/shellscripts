@@ -14,13 +14,17 @@ echo
 chmod +x ./libs/*
 sudo docker pull ${TEZEDGE_IMAGE}
 
+echo
+echo -e "${yellow}--- Creating folders for permanent storage${endColor}"
+echo
+
 if [ -d "${TEZOS_PATH}"/tezedge ]; then
   echo
-  echo -e "${green}--- Folders already created${endColor}"
+  echo -e "${green}✓ Folders already present${endColor}"
   echo
 else
   echo
-  echo -e "${yellow}--- Creating folders for permanent storage${endColor}"
+  echo -e "${yellow}✓ Folders created${endColor}"
   echo
 
   # Creating folders for permanent storage of Docker volumes
