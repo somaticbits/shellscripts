@@ -24,7 +24,7 @@ if [ -d "${TEZOS_PATH}"/tezedge ]; then
   echo
 else
   echo
-  echo -e "${yellow}✓ Folders created${endColor}"
+  echo -e "${green}✓ Folders created${endColor}"
   echo
 
   # Creating folders for permanent storage of Docker volumes
